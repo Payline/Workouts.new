@@ -1,0 +1,591 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeueRegular.eot');
+    src: url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+    url('../fonts/BebasNeueRegular.woff') format('woff'),
+    url('../fonts/BebasNeueRegular.ttf') format('truetype'),
+    url('../fonts/BebasNeueRegular.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('../fonts/Metropolis-Medium.eot');
+    src: url('../fonts/Metropolis-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Metropolis-Medium.woff2') format('woff2'),
+    url('../fonts/Metropolis-Medium.woff') format('woff'),
+    url('../fonts/Metropolis-Medium.ttf') format('truetype'),
+    url('../fonts/Metropolis-Medium.svg#Metropolis-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis Semi';
+    src: url('../fonts/Metropolis-SemiBold.eot');
+    src: url('../fonts/Metropolis-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Metropolis-SemiBold.woff2') format('woff2'),
+    url('../fonts/Metropolis-SemiBold.woff') format('woff'),
+    url('../fonts/Metropolis-SemiBold.ttf') format('truetype'),
+    url('../fonts/Metropolis-SemiBold.svg#Metropolis-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('../fonts/Metropolis-Light.eot');
+    src: url('../fonts/Metropolis-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Metropolis-Light.woff2') format('woff2'),
+    url('../fonts/Metropolis-Light.woff') format('woff'),
+    url('../fonts/Metropolis-Light.ttf') format('truetype'),
+    url('../fonts/Metropolis-Light.svg#Metropolis-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    background-image: url('../images/bg_01.jpg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 21px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 25px;
+}
+
+header .container {
+    max-width: 1169px;
+    margin: auto;
+    padding-bottom: 21px;
+    border-bottom: solid 2px #464646;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    min-width: 208px;
+    height: 42px;
+    padding: 15px;
+    text-align: left;
+    color: #9a9a9a;
+    border: none;
+    background-color: #ebebeb;
+    font-size: 15px;
+    font-family: 'Metropolis';
+    border-radius: 4px;
+}
+
+.search i{
+  color: #fa090a;
+    font-size: 17px;
+}
+
+.online {
+    padding: 15px;
+    background-color: #252525;
+    color: #ffffff;
+    width: 169px;
+    height: 42px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 15px;
+    font-family: 'Metropolis';
+}
+
+.online i{
+    padding-right: 13px;
+}
+
+.log {
+    width: 169px;
+    height: 42px;
+    background-color: #464646;
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    margin-right: 25px;
+    padding: 15px;
+    font-family: 'Metropolis';
+}
+
+.log i {
+    padding-right: 13px;
+}
+
+.sing {
+    width: 169px;
+    height: 42px;
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #fa090a;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Metropolis';
+}
+
+.sing i {
+    padding-right: 13px;
+}
+
+.menu {
+    max-width: 1169px;
+    margin: auto;
+    padding-top: 22px;
+    padding-bottom: 26px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu nav ul {
+    list-style: none;
+}
+
+.menu nav ul li {
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.menu nav ul li a{
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    font-family: 'Bebas Neue';
+    padding-right: 25px;
+}
+
+.menu nav ul li:after {
+    content: "";
+    display: block;
+    background-color: #ff0000;
+    margin-left: -6px;
+    height: 4px;
+    width: 0;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.menu nav ul li:hover:after, menu nav ul li.active:after {
+    width: 100%;
+}
+
+.soc a{
+    display: inline-block;
+    justify-content: space-between;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.soc a i{
+    color: #fa090a;
+    font-size: 30px;
+    padding-left: 15px;
+}
+
+.bg-header {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.bg-header div {
+    max-width: 1169px;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Bebas Neue';
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 66px;
+    padding-bottom: 33px;
+    border-bottom: solid 3px #ff0000;
+}
+
+.list-left, .right-block{
+  height: 1744px;
+}
+
+.list-left {
+    float: left;
+    background-color: #000;
+    width: 20%;
+    position: absolute;
+}
+
+.list {
+    margin-top: 25px;
+}
+
+.list li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.list li a{
+    text-decoration: none;
+    font-family: 'Metropolis Semi';
+    color: #c2c2c2;
+    font-size: 14px;
+    padding-left: 23px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.list li a:hover {
+    content: "";
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    background-color: #ff0000;
+    transition: 0.7s;
+}
+
+
+.list li i{
+    padding-right: 20px;
+    color: #c2c2c2;
+}
+
+.right-block {
+    float: right;
+    width: 80%;
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+.right-block .container{
+    padding-top: 34px;
+    max-width: 895px;
+    margin: auto;
+}
+
+.right-block .container h2{
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+    float: left;
+    padding-right: 40px;
+}
+
+.right-block .container h2 i{
+    color: #ff0000;
+    margin-left: 4px;
+}
+
+.choose{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_top {
+    padding-bottom: 21px;
+    border-bottom: solid 1px #898989;
+}
+
+.choose select{
+    width: 169px;
+    height: 42px;
+    background-color: #a1a1a1;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Metropolis';
+    padding-right: 17px;
+    padding-left: 17px;
+    border: none;
+    border-radius: 1px;
+    margin-left: 17px;
+    display: inline-block;
+}
+
+.container_center{
+padding-top: 34px;
+}
+
+.picture_1 {
+    position: relative;
+    max-height: 503px;
+    margin-bottom: 3px;
+}
+
+.foto_1{
+    position: relative;
+    z-index: 1;
+}
+
+.picture_1 i{
+    position: relative;
+    font-size: 81px;
+    color: #fff;
+    z-index: 2;
+    left: 409px;
+    top: -296px;
+}
+
+.picture_1 i:hover{
+    color: #fa090a;
+}
+
+.list_video {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.video_right {
+    display: inline-block;
+    text-align: right;
+    margin-left: 30px;
+    padding-top: 34px;
+}
+
+.video_right img:hover{
+    content: "";
+    opacity: 0.2;
+    background-color: #fa090a;
+    transition: 0.3s;
+}
+
+.video_left {
+    display: inline-block;
+    text-align: left;
+    padding-top: 34px;
+}
+
+.video_left img:hover{
+    content: "";
+    opacity: 0.2;
+    background-color: #fa090a;
+    transition: 0.3s;
+}
+
+.inform {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 21px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #898989;
+}
+
+.inform i{
+    font-size: 17px;
+    color: #444444;
+}
+
+.inform i:hover{
+    color: #fa090a;
+}
+
+.inform h4{
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    color: #363636;
+}
+
+.inform h6{
+    font-family: 'Metropolis';
+    font-size: 14px;
+    color: #555555;
+}
+
+input[type="checkbox"] {
+    width: 33px;
+    height: 9px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #d1d1d1;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: inset 0 0 5px rgba(204,204,204, .2);
+    transition: 0.3s;
+    position: relative;
+}
+
+input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    background: #959595;
+    transform: scale(1.1);
+    box-shadow: 0 1px 5px rgba(204,204,204, .2);
+    transition: 0.3s;
+}
+
+input:checked[type="checkbox"]::before {
+    left: 20px;
+    background: #fa090a;
+}
+
+.container_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_bottom nav ol {
+    list-style: none;
+    padding-top: 38px;
+    padding-bottom: 42px;
+}
+
+.container_bottom nav ol li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.container_bottom nav ol li i{
+   color: #444444;
+    font-size: 9px;
+}
+
+.container_bottom nav ol li a{
+    font-size: 16px;
+    color: #000;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+.container_bottom nav ol li a:hover {
+    border-radius: 50%;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #fff;
+    background-color: #fa090a;
+    transition: 0.5s;
+}
+
+
+.solit_bottom{
+    background-color: #fff;
+    clear: both;
+    height: 134px;
+}
+
+.footer{
+    clear: both;
+    background-color: #010006;
+    margin: auto;
+    text-align: center;
+    border-top: solid 1px #88888b;
+}
+
+.footer .container h5{
+    padding-top: 75px;
+    color: #fcfcfc;
+    font-size: 19px;
+    font-family: 'Metropolis';
+    padding-bottom: 36px;
+}
+
+.footer .container form{
+    display: flex;
+    justify-content: space-between;
+    max-width: 808px;
+    padding-bottom: 49px;
+}
+
+.label_email {
+    width: 389px;
+    height: 42px;
+    background-color: #fff;
+    border: none;
+    padding: 15px 26px 15px 26px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #959595;
+    font-family: 'Metropolis';
+    border-radius: 2px;
+}
+
+.button_subscrible{
+    color: #fff;
+    background-color: #ff0000;
+    text-align: center;
+    width: 309px;
+    height: 50px;
+    border: none;
+    font-size: 17px;
+    font-family: 'Metropolis';
+    padding: 17px;
+    border-radius: 2px;
+}
+
+.footer_center{
+    border-top: solid 1px #464647;
+    border-bottom: solid 1px #464647;
+    background-color: #252525;
+    margin-bottom: 63px;
+}
+
+.footer_center .container{
+    max-width: 1169px;
+    margin: auto;
+    display: flex;
+    padding-top: 59px;
+    padding-bottom: 63px;
+}
+
+.logo_footer{
+    display: inline-block;
+padding-bottom: 44px;
+}
+
+.soc_footer a{
+    display: inline-block;
+    justify-content: space-between;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.soc_footer a i{
+    color: #fa090a;
+    font-size: 42px;
+    padding-right: 15px;
+}
+
+.schedule{
+padding-left: 100px;
+}
+
+.schedule a h6{
+    font-size: 13px;
+    font-family: 'Metropolis';
+    color: #fff;
+    text-align: left;
+    padding-bottom: 24px;
+}
